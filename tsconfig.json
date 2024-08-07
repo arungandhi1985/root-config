@@ -1,0 +1,19 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/verint-root-config.tsx"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@project/utils": ["./utils/src"]
+    },
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "root-config", "app1", "app2", "utils"],
+  "exclude": ["src/**/*.test*"]
+}
